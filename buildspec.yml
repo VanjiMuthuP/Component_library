@@ -1,7 +1,7 @@
 version: 0.2
 env:  
-  variables:
-    PRODUCTION_DOMAIN: $PRODUCTION_DOMAIN   
+  secrets-manager:
+    PRODUCTION_DOMAIN: Secret   
 phases:
   install:
     commands:      
