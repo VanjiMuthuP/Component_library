@@ -1,7 +1,7 @@
 version: 0.2
 env:  
   secrets-manager:
-    PRODUCTION_DOMAIN: Secret   
+    PRODUCTION_DOMAIN: $PRODUCTION_DOMAIN
 phases:
   install:
     commands:      
@@ -19,4 +19,3 @@ artifacts:
     - "**/*"
   discard-paths: no
   base-directory: dist
-  
